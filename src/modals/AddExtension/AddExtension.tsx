@@ -13,11 +13,11 @@ interface AddExtensionProps {
 
 const AddExtension = ({ setDisplayModal, setExtensions, extensions }: AddExtensionProps) => {
 
-    const [imgSelected, setImgSelected] = useState<string>('/images/logo-devlens.svg')
+    const basePath = import.meta.env.BASE_URL;
+    
+    const [imgSelected, setImgSelected] = useState<string>(`${basePath}images/logo-devlens.svg`)
     const [extensionName, setExtensionName] = useState<string>('')
     const [extensionDescription, setExtensionDescription] = useState<string>('')
-
-    const basePath = import.meta.env.BASE_URL;
 
     const urlImgs: urlImgs[] = [
         { imgUrl: `${basePath}images/logo-devlens.svg` },
