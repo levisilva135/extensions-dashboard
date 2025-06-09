@@ -1,0 +1,51 @@
+.extension-main {
+    display: flex;
+}
+
+.container-infos p {
+    flex-wrap: wrap;
+}
+
+.container-infos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.extensions {
+    background-color: #2f354b;
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: relative;
+    height: 200px;
+    transition: ease-in-out 0.3s;
+}
+
+.btn-remove {
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.btn-remove:hover {
+    background-color: #585b63;
+}
+
+footer {
+    position: absolute;
+    margin-top: 10px;
+    margin: 0 auto;
+    bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 93%;
+}
+
+.fade-out {
+    opacity: 0;
+}

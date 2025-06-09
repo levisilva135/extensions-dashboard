@@ -1,0 +1,39 @@
+.btn-options {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: #2f354b;
+    color: #fff;
+    font-weight: 400;
+    margin-left: 10px;
+    width: 80px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+}
+
+.btn-options:nth-child(1) {
+    width: 50px;
+
+}
+
+.container-buttons {
+    display: flex;
+
+}
+
+.active {
+    background-color: #f25c58;
+    color: #000;
+}
+
+.new-extension {
+    background-color: #fff;
+    color: #000;
+}
+
+@media (max-width: 375px) {
+    .btn-options {
+        font-size: 0.8rem;
+        width: 70px;
+    }
+}
