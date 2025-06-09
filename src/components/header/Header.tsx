@@ -7,16 +7,16 @@ interface HeaderProps {
 
 const Header = ({ setDarkMode }: HeaderProps) => {
 
-    const [imgSrc, setImgSrc] = useState<string>('/images/icon-sun.svg')
-
+    const basePath = import.meta.env.BASE_URL;
+    const [imgSrc, setImgSrc] = useState<string>(`${basePath}/images/icon-sun.svg`)
     const handleImage = (): void => {
-       
-        if (imgSrc === '/images/icon-sun.svg') {
-            setImgSrc('/images/icon-moon.svg')
+
+        if (imgSrc === `${basePath}/images/icon-sun.svg`) {
+            setImgSrc(`${basePath}/images/icon-moon.svg`)
             setDarkMode(false)
         }
         else {
-            setImgSrc('/images/icon-sun.svg')
+            setImgSrc(`${basePath}/images/icon-sun.svg`)
             setDarkMode(true)
         }
     }
@@ -24,8 +24,8 @@ const Header = ({ setDarkMode }: HeaderProps) => {
     return (
         <div className='header-container'>
             <div className='container-logo'>
-                <img src="/images/logo3.svg" alt="img-logo" className='logo-img' />
-                <img src="/images/logo2.svg" alt="img-logo" className='logo-text' />
+                <img src={`${basePath}/images/logo3.svg`} alt="img-logo" className='logo-img' />
+                <img src={`${basePath}/images/logo2.svg`} alt="img-logo" className='logo-text' />
             </div>
             <div className='container-img' onClick={handleImage}>
                 <img src={imgSrc} alt="img" className='' />

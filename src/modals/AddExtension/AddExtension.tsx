@@ -17,19 +17,21 @@ const AddExtension = ({ setDisplayModal, setExtensions, extensions }: AddExtensi
     const [extensionName, setExtensionName] = useState<string>('')
     const [extensionDescription, setExtensionDescription] = useState<string>('')
 
+    const basePath = import.meta.env.BASE_URL;
+
     const urlImgs: urlImgs[] = [
-        { imgUrl: '/images/logo-devlens.svg' },
-        { imgUrl: '/images/logo-style-spy.svg' },
-        { imgUrl: '/images/logo-speed-boost.svg' },
-        { imgUrl: '/images/logo-json-wizard.svg' },
-        { imgUrl: '/images/logo-tab-master-pro.svg' },
-        { imgUrl: '/images/logo-viewport-buddy.svg' },
-        { imgUrl: '/images/logo-markup-notes.svg' },
-        { imgUrl: '/images/logo-grid-guides.svg' },
-        { imgUrl: '/images/logo-palette-picker.svg' },
-        { imgUrl: '/images/logo-link-checker.svg' },
-        { imgUrl: '/images/logo-dom-snapshot.svg' },
-        { imgUrl: '/images/logo-console-plus.svg' },
+        { imgUrl: `${basePath}images/logo-devlens.svg` },
+        { imgUrl: `${basePath}images/logo-style-spy.svg` },
+        { imgUrl: `${basePath}images/logo-speed-boost.svg` },
+        { imgUrl: `${basePath}images/logo-json-wizard.svg` },
+        { imgUrl: `${basePath}images/logo-tab-master-pro.svg` },
+        { imgUrl: `${basePath}images/logo-viewport-buddy.svg` },
+        { imgUrl: `${basePath}images/logo-markup-notes.svg` },
+        { imgUrl: `${basePath}images/logo-grid-guides.svg` },
+        { imgUrl: `${basePath}images/logo-palette-picker.svg` },
+        { imgUrl: `${basePath}images/logo-link-checker.svg` },
+        { imgUrl: `${basePath}images/logo-dom-snapshot.svg` },
+        { imgUrl: `${basePath}images/logo-console-plus.svg` },
     ]
 
     const [lengthName, setLengthName] = useState<number>(0)

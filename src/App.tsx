@@ -21,19 +21,21 @@ function App() {
   const [darkMode, setDarkMode] = useState<boolean>(true)
   const [displayModal, setDisplayModal] = useState<boolean>(false)
 
+  const basePath = import.meta.env.BASE_URL;
+
   const [extensions, setExtensions] = useState<Extensions[]>([
-    { urlImg: '/images/logo-devlens.svg', description: 'Quickly inspect page layouts and visualize element boundaries.', title: 'DevLens' },
-    { urlImg: '/images/logo-style-spy.svg', description: 'Instantly analyze and copy CSS from any webpage element.', title: 'StyleSpy' },
-    { urlImg: '/images/logo-speed-boost.svg', description: 'Optimizes Browser resource usage to accelerate page loading', title: 'SpeedBost' },
-    { urlImg: '/images/logo-json-wizard.svg', description: 'Formats, validates, and prettifies JSON responses in-browser.', title: 'JSONWizard' },
-    { urlImg: '/images/logo-tab-master-pro.svg', description: 'Organizes browser tabs into groups and sessions.', title: 'TabMaster Pro' },
-    { urlImg: '/images/logo-viewport-buddy.svg', description: 'Simulates various screen resolutions directly within the browser.', title: 'ViewportBuddy' },
-    { urlImg: '/images/logo-markup-notes.svg', description: 'Enables annotation and notes directly onto webpages for collaborative debugging.', title: 'Markup Notes' },
-    { urlImg: '/images/logo-grid-guides.svg', description: 'Overlay customizable grids and alignment guides on any webpage.', title: 'GridGuides' },
-    { urlImg: '/images/logo-palette-picker.svg', description: 'Instanly extracts color palettes from any webpage.', title: 'Palette Picker' },
-    { urlImg: '/images/logo-link-checker.svg', description: 'Scans and highlights broken links on any page.', title: 'LinkChecker' },
-    { urlImg: '/images/logo-dom-snapshot.svg', description: 'Capture and export DOM structures quickly.', title: 'DOM Snapshot' },
-    { urlImg: '/images/logo-console-plus.svg', description: 'Enchanced developer console with advanced filtering and logging.', title: 'ConsolePlus' },
+    { urlImg: `${basePath}images/logo-devlens.svg`, description: 'Quickly inspect page layouts and visualize element boundaries.', title: 'DevLens' },
+    { urlImg: `${basePath}images/logo-style-spy.svg`, description: 'Instantly analyze and copy CSS from any webpage element.', title: 'StyleSpy' },
+    { urlImg: `${basePath}images/logo-speed-boost.svg`, description: 'Optimizes Browser resource usage to accelerate page loading', title: 'SpeedBost' },
+    { urlImg: `${basePath}images/logo-json-wizard.svg`, description: 'Formats, validates, and prettifies JSON responses in-browser.', title: 'JSONWizard' },
+    { urlImg: `${basePath}images/logo-tab-master-pro.svg`, description: 'Organizes browser tabs into groups and sessions.', title: 'TabMaster Pro' },
+    { urlImg: `${basePath}images/logo-viewport-buddy.svg`, description: 'Simulates various screen resolutions directly within the browser.', title: 'ViewportBuddy' },
+    { urlImg: `${basePath}images/logo-markup-notes.svg`, description: 'Enables annotation and notes directly onto webpages for collaborative debugging.', title: 'Markup Notes' },
+    { urlImg: `${basePath}images/logo-grid-guides.svg`, description: 'Overlay customizable grids and alignment guides on any webpage.', title: 'GridGuides' },
+    { urlImg: `${basePath}images/logo-palette-picker.svg`, description: 'Instanly extracts color palettes from any webpage.', title: 'Palette Picker' },
+    { urlImg: `${basePath}images/logo-link-checker.svg`, description: 'Scans and highlights broken links on any page.', title: 'LinkChecker' },
+    { urlImg: `${basePath}images/logo-dom-snapshot.svg`, description: 'Capture and export DOM structures quickly.', title: 'DOM Snapshot' },
+    { urlImg: `${basePath}images/logo-console-plus.svg`, description: 'Enchanced developer console with advanced filtering and logging.', title: 'ConsolePlus' },
   ])
 
   const body = document.querySelector('body')
