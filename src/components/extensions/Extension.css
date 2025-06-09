@@ -3,8 +3,9 @@
 }
 
 .container-infos p {
-    display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    max-width: 250px;
+    word-wrap: break-word;
 }
 
 .container-infos {
