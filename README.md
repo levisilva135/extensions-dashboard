@@ -7,7 +7,7 @@ A small **frontend application** built with **React** and **Vite** that simulate
 
 - Display list of mock extensions (with icons and descriptions)
 - Toggle to enable/disable extensions
-- Remove/uninstall extensions
+- Remove extensions
 - Responsive design
 - Built with **React + Vite** (fast and modern setup)
 
