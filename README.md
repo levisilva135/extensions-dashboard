@@ -1,6 +1,6 @@
 #  Extension Manager Simulator
 
-A small **frontend application** built with **React** and **Vite** that simulates an **extension manager**. Users can view, enable, disable, and remove mock extensions through an intuitive and responsive UI.
+A small **frontend application** built with **React** that simulates an **extension manager**. Users can view, enable, disable, and remove mock extensions through an intuitive and responsive UI.
 
 
 ## 🚀 Features
